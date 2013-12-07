@@ -40,7 +40,6 @@ void getAmbient()
   Serial.print("Let me get the ambient luxes");
   for(int i=0;i < samples;i++) 
   {
-    Serial.print(".");
     reading = getReading();
     if (reading < rawMin)
       rawMin = reading;
